@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Notez</title>
+		
+		<link href="{% static 'css/note.css' %}">
+	</head>
+
+	<body>	
+		<div class='body'>
+		
+			<div class='first'>
+				<h4>
+					<a href='/{{ user }}/notes/'>Menu</a>
+					<a href='/{{ user }}/notes/{{ note.title }}/delete'>Delete</a>
+					<a href='/{{ user }}/notes/{{ note.title }}/edit'>Edit</a>
+				</h4>
+			</div>
+			
+			
+			<div class='second'>
+				<h1>{{ note.title }}<h1>
+				<h5><i>{{ note.name.sector }}</i></h5>
+				
+				<p class='link'>
+					<i>Created: {{ note.date }}</i>
+					<i>Updated: {{ note.last }}</i>
+				</p>
+				
+				<p class="text">{{ note.text|linebreaks }}<p>
+			</div>
+			
+		
+
+		</div>
+	<body>
+
+</html>
+
+
+
+

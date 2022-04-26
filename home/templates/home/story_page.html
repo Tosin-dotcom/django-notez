@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<title>Notes</title>
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'css/home.css' %}">
+	</head>
+
+	<body>
+
+
+		
+		<div class="first">
+			<h1>Notes</h1>
+		</div>
+		
+		
+		
+		<div class='container'>
+				<a href="/{{ user }}/notes/create/">Create</a>
+				
+					<a style="text-align:right;" href='/user/logout/'>
+						Logout
+					</a>
+		</div>
+		
+		<div class="total">
+			
+			
+			{% for i in notes %}
+			
+				<div class="notes">
+				
+					
+						<img src="{{ i.name.image1.url }}" height=200px width=100% alt="">
+						<h2 class="text">{{ i.title|truncatechars:"25" }}</h2>
+						<p>
+							<i>{{ i.name.sector }}</i> |
+							<i>{{ i.date }}</i>
+						</p>
+						<p class="chars">{{ i.text|truncatechars:"80" }}</p>
+						<a href='/{{ user }}/notes/{{ i.title }}/'>READ MORE</a>	
+					
+				</div>
+	
+			{% empty %}
+				
+				<div class="icons">
+					<a href="/{{ user }}/notes/create/">
+						<i class="material-icons" style="font-size:120px;text-align:center;line-height:60vh;color:#00bc95">note_add</i>
+					</a>
+				</div>
+
+			{% endfor %}
+		</div>
+		
+	<body>
+
+</html>
+

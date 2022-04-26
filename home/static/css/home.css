@@ -1,0 +1,94 @@
+ body {
+	margin: 0px;
+
+ }
+
+ .first {
+	background-color: #00bc95;
+	padding: 0px;
+	margin: 0px;
+	border: 10px solid #00bc95;
+	height: 60px;
+}
+
+.first h1{
+	text-align : center;
+	
+}
+
+.total {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: rgba(243, 244, 246, 1)
+}
+
+
+.notes {
+	border: 2px solid #e4e4e4;
+	margin: 10px;
+	height: 410px;
+	width: 268px;
+	border-radius: 10px;
+	float: left;
+	background-color: white;
+}
+
+
+
+
+
+.notes p, .notes h2, .notes a {
+	margin: 0px;
+	padding: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.notes h2 {
+	font-weight:bolder; 
+}
+
+.text {
+	height: 50px
+}
+
+.chars {
+	height: 65px;
+}
+
+.notes p i {
+	font-size: 12px;
+}
+
+.notes a {
+	text-align:center;
+	text-decoration: none;
+	background-color: #00bc95;
+	padding: 10px 70px 10px;
+	color: white;
+}
+
+.notes a:hover {
+	border: 1px solid #00bc95;
+	background-color: transparent;
+	color: #00bc95;
+}
+
+.notes img {
+	border-radius: 10px 10px 0 0;
+}
+
+.form-1 {
+	text-align:right;
+}
+
+#text {
+	padding:20px;
+}
+
+.icons {
+	height: 60vh;
+}

@@ -1,0 +1,135 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica, sans-serif;
+}
+
+
+#welcome {
+    height: 500px;
+    background-image: url(/media/css/back6.jpg);
+    background-position: center top;
+    background-size: cover;
+    padding: 10px;
+    border: 0px;
+    margin: 0px
+}
+
+.nav-bar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    margin: 5px;
+    padding: 2px;
+
+}
+
+.nav-bar a {
+    display : inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none
+}
+
+.nav-bar a:visited {
+    color: black
+
+}
+.nav-bar a:hover {
+    color: #148670bb;
+}
+
+
+.nav-bar a:active {
+    color: #00bc95;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 68px;
+    position: relative;
+    top:90px;
+}
+
+.subtitle {
+    font-size: 20px;
+    position: relative;
+    top: 80px;
+    text-align: center;
+    font-weight: lighter;
+    
+}
+
+.btn {
+    text-align: center;
+    padding: 20px 40px 20px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    background-color: #00bc95;
+    position: absolute;
+    top : 400px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+.btn:hover {
+    background-color: inherit;
+    border: 2px solid black;
+}
+
+#services {
+    background-color: #e4e4e4;
+    border: 1px solid #e4e4e4;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+#services div {
+    margin: 20px;
+    border: 1px;
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+}
+
+#services img {
+    width: 50px;
+    height: 50px;
+}
+
+#services h5 {
+    font-weight: bolder;
+}
+
+#contact {
+    height : 200px;
+    border: 1px solid #00bc95;
+    background-color: #00bc95;
+    text-align: center;
+    justify-content:center;
+}
+
+#contact div {
+    margin-top: 50px;
+}
+
+#contact div div{
+    display: inline-block;
+    margin-top:3px
+}
+
+
+#contact img {
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid #E7EBEF;
+    border-radius: 50%;
+}

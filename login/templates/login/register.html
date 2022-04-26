@@ -1,0 +1,83 @@
+{% extends 'login/index.html' %}
+
+
+{% block title %}
+	<title>Register</title>
+	<style>
+		#login-form {
+			border: 3px solid #f1f1f1;
+			border-radius: 20px;
+			width: 35%;
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		#container {
+			padding: 16px;
+		}
+		
+		
+		input[type=text], input[type=password], input[type=email] {
+			width: 100%;
+			padding: 12px 20px;
+			display: inline-block;
+			margin: 16px 0;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			border-radius: 10px;
+		}
+
+		input[type=submit] {
+			background-color: #04AA6D;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0 0 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			border-radius: 20px;
+		}
+
+			/* Add a hover effect for buttons */
+		input[type=submit]:hover {
+			opacity: 0.8;
+		}
+
+	</style>
+{% endblock %}
+
+
+{% block content %}
+	<h1>Welcome to Notez</h1>
+
+	<div id="login-form">
+		
+	
+			{% if messages %}
+				<ul>
+					{% for message in messages %}
+						<li>{{ message }}</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+
+			
+			<div id="container">
+			<h2>Register</h2>
+			<p style="text-align:right;margin:0px; padding:0px;">Have an account?<a href="/user/login">Log in</a></p>
+			<form method='post'>
+				{% csrf_token %}
+			
+				{{ form }}
+			
+				<input type='submit' value = 'Register'>
+			</form>
+			</div>
+		
+
+	</div>
+	
+{% endblock %}

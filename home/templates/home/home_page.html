@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Notez</title>
+
+		{% load static %}
+		<link rel="stylesheet" href="{% static 'css/story.css' %}">
+
+	</head>
+
+	<body>
+		<div id='welcome'>
+					
+			<div class="nav-bar">
+				
+				<a href="#welcome">
+					<nav>Home</nav>
+				</a>
+
+				<a href="#services">
+					<nav>Services</nav>
+				</a>
+
+				<a href="#contact">
+					<nav>Contact</nav>
+				</a>
+
+			</div>
+
+			<h1 class="title">Welcome</h1>
+			<h1 class="subtitle">Write down your notes here</h1>
+			<a class="btn" href='/{{ user }}/notes'>Get Started</a>
+		</div>
+
+		<div id="services">
+				<div>
+					<img src="/media/icons/secured.png" alt="">
+					<h4>SECURED NOTES</h4>
+					<p>Your notes are secured and protected</p>
+				</div>
+
+				<div>
+					<img src="/media/icons/pencil.png" alt="">
+					<h4>EASY TO CREATE</h4>
+					<p>Create Nice and editable notes at your ease</p>
+				</div>
+
+				<div>
+					<img src="/media/icons/reading-book.png" alt="">
+					<h4>VIEW AT YOUR EASE</h4>
+					<p>View your notes at any time anywhere</p>
+				</div>
+
+				<div>
+					<img src="/media/icons/edit.png" alt="">
+					<h4>RAPID EDITING</h4>
+					<p>You have full ability to update your notes at any time</p>
+				</div>
+
+				<div>
+					<img src="/media/icons/trash.png" alt="">
+					<h4>DELETE</h4>
+					<p>You have the ability to delete any notes at any time</p>
+				</div>
+
+				<div>
+					<img src="/media/icons/creativity.png" alt="">
+					<h4>ENCHANCE YOUR CREATIVITY</h4>
+					<p>Unleash the creativity in you as you create excellent notes</p>
+				</div>		
+
+		</div>
+
+		<div id="contact">
+
+			<div>
+			<h4>KEEP IN TOUCH</h4>
+			
+
+			<div>
+				<a href="https://twitter.com/IyiolaTosin1" target="_blank">
+					<img src="/media/social/twiiter.jpg" width=36px height=36px alt="">
+				</a>
+			</div>
+
+			<div>
+				<a href="https://www.instagram.com/iyitos123/" target="_blank">
+					<img src="/media/social/instagram.jpg" width=36px height=36px alt="">
+				</a>
+			</div>
+			
+			<div>
+				<a href="https://github.com/Tosin-dotcom"  target="_blank">
+					<img src="/media/social/github.png" width=36px height=36px alt="">
+				</a>
+			</div>
+
+			</div>
+		</div>
+		
+	<body>
+
+</html>
