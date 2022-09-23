@@ -3,9 +3,23 @@
 
 {% block title %}
 	<title>Login</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,9000&display=swap" rel="stylesheet">
 	{% load static %}
 	<!-- <link rel="stylesheet" href="{% static 'css/login.css' %}"> -->
 	<style>
+		* {
+			margin: 0px;
+			border: 0px;
+			box-sizing: border-box;
+		}
+		body {
+			background-position: center;
+			background-size: cover;
+			/* ;
+  			
+  			r; */
+			background-image: url("/media/css/form-image.jpg")
+		}
 		#login-form {
 			border: 3px solid #f1f1f1;
 			border-radius: 20px;
@@ -15,6 +29,11 @@
   			top: 50%;
   			left: 50%;
  			transform: translate(-50%, -50%);
+		}
+		@media only screen and (max-width: 768px) {
+			#login-form {
+				width:80%
+			}
 		}
 
 		#container {
@@ -47,14 +66,23 @@
 		input[type=submit]:hover {
 			opacity: 0.8;
 		}
-
+		.homepage {
+			color: black;
+			font-size: 24px;
+			font-family: 'Poppins', sans-serif;
+			font-weight: 1000;
+			text-decoration: none;
+		}
+		label {
+			font-weight: bold;
+		}
  	</style>
 {% endblock %}
 
 
 {% block content %}
 
-	<h1>Welcome to Notez</h1>
+	<h1><a href="/" class="homepage">Notez</a></h1>
 
 	<div id="login-form">
 		

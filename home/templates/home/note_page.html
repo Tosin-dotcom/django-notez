@@ -1,27 +1,49 @@
-{% load static %}
+
 <!DOCTYPE html>
 
 <html>
 	<head>
 		<title>Notez</title>
-		
+		<script src="https://kit.fontawesome.com/2f14a45fe6.js" crossorigin="anonymous"></script>
+		{% load static %}
 		<link href="{% static 'css/note.css' %}">
+		<style>
+			.header-link a {
+				text-decoration: none;
+				padding:10px;
+			}
+			.header-link a {	
+				color: black
+			}
+			.hed-1 {
+				font-size:45px;
+			}
+			.link {
+				font-size:18px;
+			}
+			h5 {
+				font-size: 18px;
+			}
+			p {
+				font-size: 20px;
+			}
+		</style>
 	</head>
 
 	<body>	
 		<div class='body'>
 		
 			<div class='first'>
-				<h4>
-					<a href='/{{ user }}/notes/'>Menu</a>
-					<a href='/{{ user }}/notes/{{ note.title }}/delete'>Delete</a>
-					<a href='/{{ user }}/notes/{{ note.title }}/edit'>Edit</a>
+				<h4 class="header-link">
+					<a href='/{{ user }}/notes/'><i class="fa-solid fa-bars"></i> Menu</a>
+					<a href='/{{ user }}/notes/{{ note.title }}/delete'><i class="fa-sharp fa-solid fa-trash"></i> Delete</a>
+					<a href='/{{ user }}/notes/{{ note.title }}/edit'><i class="fa-solid fa-pen-to-square"></i> Edit</a>
 				</h4>
 			</div>
 			
 			
 			<div class='second'>
-				<h1>{{ note.title }}<h1>
+				<h1 class="hed-1">{{ note.title }}</h1>
 				<h5><i>{{ note.name.sector }}</i></h5>
 				
 				<p class='link'>
@@ -29,7 +51,7 @@
 					<i>Updated: {{ note.last }}</i>
 				</p>
 				
-				<p class="text">{{ note.text|linebreaks }}<p>
+				<p class="text">{{ note.text|linebreaks }}</p>
 			</div>
 			
 		

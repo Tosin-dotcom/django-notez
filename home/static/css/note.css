@@ -3,6 +3,9 @@
 }
 
 p.text {
-	color:#d32424;
+	color: #d32424;
 }
-		
+
+.hed-1 {
+	font-size: 45px;
+}

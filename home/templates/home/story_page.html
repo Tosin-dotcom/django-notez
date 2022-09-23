@@ -6,6 +6,8 @@
     	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,9000&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/2f14a45fe6.js" crossorigin="anonymous"></script>
 		<title>Notes</title>
 		{% load static %}
 		<link rel="stylesheet" href="{% static 'css/home.css' %}">
@@ -21,15 +23,19 @@
 		
 		
 		
-		<div class='container'>
+		<!-- <div class='container'>
 				<a href="/{{ user }}/notes/create/">Create</a>
 				
 					<a style="text-align:right;" href='/user/logout/'>
 						Logout
 					</a>
+		</div> -->
+		<div class="container">
+			<a href="/{{ user }}/notes/create/"><i class="fa-solid fa-4x fa-circle-plus"></i></a>
 		</div>
 		
 		<div class="total">
+			
 			
 			
 			{% for i in notes %}
@@ -59,7 +65,8 @@
 			{% endfor %}
 		</div>
 		
-	<body>
+		
+	</body>
 
 </html>
 

@@ -47,6 +47,7 @@ def register_view(request):
 
             if username in users:
                 messages.error(request, "Username already exists")
+        
 
             if p1 == p2:
                 user = User.objects.create_user(username=username, password=p1, email=email)

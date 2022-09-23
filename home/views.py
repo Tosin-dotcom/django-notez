@@ -44,31 +44,28 @@ def story_view(request, user):
             "form2" : form2,
         },
     ) """
-    
+
+
 @login_required(login_url="/user/login")
 def story_view(request, user):
     if User.objects.get(username=user) != request.user:
         raise Http404("User does not exists")
 
     form = OrderForm(request.POST)
-    #if request.method == "POST":
+    # if request.method == "POST":
     if form.is_valid():
         a = form.cleaned_data["order"]
         b = form.cleaned_data["sequence"].strip()
-            
+
         notes = Note.objects.filter(author=request.user).order_by(b + a)
-    
+
     notes = Note.objects.filter(author=request.user).order_by("-date")
 
     form = OrderForm()
     return render(request, "home/story_page.html", {
         "notes": notes,
-        'form' : form,
+        'form': form,
     })
-
-
-
-
 
 
 @login_required(login_url="/user/login")
@@ -84,7 +81,8 @@ def note_view(request, app, user):
 def create_view(request, user):
     if User.objects.get(username=user) != request.user:
         raise Http404("User does not exists")
-    all_name = Note.objects.filter(author=request.user).values_list("title", flat=True)
+    all_name = Note.objects.filter(
+        author=request.user).values_list("title", flat=True)
     all_name = [name.capitalize() for name in all_name]
     form = CreateForm(request.POST)
     if form.is_valid():

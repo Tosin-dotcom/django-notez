@@ -1,94 +1,108 @@
  body {
-	margin: 0px;
+ 	margin: 0px;
+ 	padding: 0px;
+ 	font-family: 'Poppins', sans-serif;
+ }
 
+ * {
+ 	margin: 0px;
+ 	border: 0px;
+ 	box-sizing: border-box;
+ }
+
+ .container {
+ 	padding: 10px;
+ 	background-color: rgba(243, 244, 246, 1)
  }
 
  .first {
-	background-color: #00bc95;
-	padding: 0px;
-	margin: 0px;
-	border: 10px solid #00bc95;
-	height: 60px;
-}
+ 	background-color: #00bc95;
+ 	padding: 0px;
+ 	margin: 0px;
+ 	border: 10px solid #00bc95;
+ 	height: 60px;
+ }
 
-.first h1{
-	text-align : center;
-	
-}
+ .first h1 {
+ 	text-align: center;
 
-.total {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background-color: rgba(243, 244, 246, 1)
-}
+ }
 
-
-.notes {
-	border: 2px solid #e4e4e4;
-	margin: 10px;
-	height: 410px;
-	width: 268px;
-	border-radius: 10px;
-	float: left;
-	background-color: white;
-}
+ .total {
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content: center;
+ 	padding-top: 50px;
+ 	padding-bottom: 50px;
+ 	background-color: rgba(243, 244, 246, 1)
+ }
 
 
+ .notes {
+ 	border: 2px solid #e4e4e4;
+ 	margin: 10px;
+ 	height: 410px;
+ 	width: 268px;
+ 	border-radius: 10px;
+ 	float: left;
+ 	background-color: white;
+ }
 
 
 
-.notes p, .notes h2, .notes a {
-	margin: 0px;
-	padding: 5px;
-	margin-left: 10px;
-	margin-right: 10px;
-}
 
-.notes h2 {
-	font-weight:bolder; 
-}
 
-.text {
-	height: 50px
-}
+ .notes p,
+ .notes h2,
+ .notes a {
+ 	margin: 0px;
+ 	padding: 5px;
+ 	margin-left: 10px;
+ 	margin-right: 10px;
+ }
 
-.chars {
-	height: 65px;
-}
+ .notes h2 {
+ 	font-weight: bolder;
+ }
 
-.notes p i {
-	font-size: 12px;
-}
+ .text {
+ 	height: 50px
+ }
 
-.notes a {
-	text-align:center;
-	text-decoration: none;
-	background-color: #00bc95;
-	padding: 10px 70px 10px;
-	color: white;
-}
+ .chars {
+ 	height: 65px;
+ }
 
-.notes a:hover {
-	border: 1px solid #00bc95;
-	background-color: transparent;
-	color: #00bc95;
-}
+ .notes p i {
+ 	font-size: 12px;
+ }
 
-.notes img {
-	border-radius: 10px 10px 0 0;
-}
+ .notes a {
+ 	text-align: center;
+ 	text-decoration: none;
+ 	background-color: #00bc95;
+ 	padding: 10px 70px 10px;
+ 	color: white;
+ }
 
-.form-1 {
-	text-align:right;
-}
+ .notes a:hover {
+ 	border: 1px solid #00bc95;
+ 	background-color: transparent;
+ 	color: #00bc95;
+ }
 
-#text {
-	padding:20px;
-}
+ .notes img {
+ 	border-radius: 10px 10px 0 0;
+ }
 
-.icons {
-	height: 60vh;
-}
+ .form-1 {
+ 	text-align: right;
+ }
+
+ #text {
+ 	padding: 20px;
+ }
+
+ .icons {
+ 	height: 60vh;
+ }

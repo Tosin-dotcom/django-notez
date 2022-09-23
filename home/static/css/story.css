@@ -1,42 +1,55 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Open Sans','Helvetica Neue',Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
+* {
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
 
 #welcome {
     height: 500px;
     background-image: url(/media/css/back6.jpg);
     background-position: center top;
     background-size: cover;
-    padding: 10px;
     border: 0px;
     margin: 0px
 }
 
 .nav-bar {
-    position: sticky;
-    position: -webkit-sticky;
+    overflow: hidden;
     top: 0;
-    margin: 5px;
-    padding: 2px;
+    width: 100%
+}
 
+.home-page {
+    color: black !important;
+    font-size: 24px !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1000;
+}
+
+.home-page:hover {
+    background: none !important;
 }
 
 .nav-bar a {
-    display : inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-decoration: none
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
-.nav-bar a:visited {
-    color: black
 
-}
+
 .nav-bar a:hover {
-    color: #148670bb;
+    background-color: #148670bb;
+
 }
 
 
@@ -49,7 +62,7 @@ body {
     font-weight: bold;
     font-size: 68px;
     position: relative;
-    top:90px;
+    top: 90px;
 }
 
 .subtitle {
@@ -58,7 +71,7 @@ body {
     top: 80px;
     text-align: center;
     font-weight: lighter;
-    
+
 }
 
 .btn {
@@ -71,10 +84,10 @@ body {
     border: 2px solid black;
     background-color: #00bc95;
     position: absolute;
-    top : 400px;
+    top: 400px;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%) 
+    transform: translate(-50%, -50%)
 }
 
 .btn:hover {
@@ -109,27 +122,17 @@ body {
     font-weight: bolder;
 }
 
+
 #contact {
-    height : 200px;
-    border: 1px solid #00bc95;
-    background-color: #00bc95;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #f1f1ef;
     text-align: center;
-    justify-content:center;
 }
 
 #contact div {
-    margin-top: 50px;
-}
-
-#contact div div{
-    display: inline-block;
-    margin-top:3px
-}
-
-
-#contact img {
-    margin: 5px;
-    padding: 5px;
-    border: 2px solid #E7EBEF;
-    border-radius: 50%;
+    padding: 5px
 }

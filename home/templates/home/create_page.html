@@ -3,6 +3,17 @@
 <html>
 	<head>
 		<title>Notez</title>
+		<style>
+			label {
+				font-weight: bold
+			}
+			#id_title, #id_text {
+				width: 100%;
+			}
+			.create {
+				font-size: 24px;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -20,7 +31,7 @@
 		{% csrf_token %}
 		{{ form.as_p }}
 		
-		<input type='submit' value='Create'>
+		<input type='submit' class="create" value='Create'>
 	</form>
 	<body>
 	
