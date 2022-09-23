@@ -25,11 +25,38 @@ body {
     width: 100%
 }
 
+@media only screen and (max-width: 768px) {
+    .home-page {
+        margin: 0px !important;
+        padding: 0px !important;
+        font-size: 20px !important;
+    }
+
+    .nav-bar a {
+        padding: 4px 8px !important;
+    }
+}
+
+
+
+.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.icon {
+    background-color: #ddd;
+    color: black;
+}
+
 .home-page {
     color: black !important;
-    font-size: 24px !important;
     font-family: 'Poppins', sans-serif;
     font-weight: 1000;
+    margin-left: 50px;
 }
 
 .home-page:hover {
