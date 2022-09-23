@@ -1,1 +1,1 @@
-"web: gunicorn notez.wsgi --log-file -" 
+web: gunicorn notez.wsgi --log-file -
