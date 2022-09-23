@@ -47,15 +47,15 @@ def register_view(request):
 
             if username in users:
                 messages.error(request, "Username already exists")
-        
-
-            if p1 == p2:
-                user = User.objects.create_user(username=username, password=p1, email=email)
-                user.save()
-                login(request, user)
-                return redirect(f"/{user.username}/notes/")
             else:
-                messages.error(request, "Passwords don't match")
+                if p1 == p2:
+                    user = User.objects.create_user(
+                        username=username, password=p1, email=email)
+                    user.save()
+                    login(request, user)
+                    return redirect(f"/{user.username}/notes/")
+                else:
+                    messages.error(request, "Passwords don't match")
 
     form = RegisterForm()
     return render(request, "login/register.html", {"form": form})

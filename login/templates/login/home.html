@@ -73,6 +73,13 @@
 		label {
 			font-weight: bold;
 		}
+		ul { list-style-type: none; }
+		
+		.message {
+			color:white;
+			padding:5px;
+			background: #C82333;
+		}
  	</style>
 {% endblock %}
 
@@ -87,7 +94,7 @@
 			{% if messages %}
 				<ul>
 					{% for message in messages %}
-						<li>{{ message }}</li>
+						<li class="message">{{ message }}</li>
 					{% endfor %}
 				</ul>
 			{% endif %}
