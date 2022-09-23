@@ -33,7 +33,7 @@ SECRET_KEY = str(os.getenv('SECRET_KEY'))
 DEBUG = os.getenv('DEBUG')
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['notez-1.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
