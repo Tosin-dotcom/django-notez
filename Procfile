@@ -1,1 +1,1 @@
-"web: gunicorn DownloadTube.wsgi --log-file -" 
+"web: gunicorn notez.wsgi --log-file -" 
