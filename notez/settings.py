@@ -162,4 +162,4 @@ DEFAULT_FILE_STORAGE = 'notez.storage_backends.PublicMediaStorage'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())

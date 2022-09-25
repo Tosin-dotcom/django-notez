@@ -11,9 +11,9 @@ class Category(models.Model):
     # image1 = models.ImageField(upload_to="uploads/")
     # image2 = models.ImageField(upload_to="uploads/")
     # image3 = models.ImageField(upload_to="uploads/")
-    image1 = models.ImageField(storage=PublicMediaStorage())
-    image2 = models.ImageField(storage=PublicMediaStorage())
-    image3 = models.ImageField(storage=PublicMediaStorage())
+    image1 = models.ImageField(storage=PublicMediaStorage(), upload_to="uploads/")
+    image2 = models.ImageField(storage=PublicMediaStorage(), upload_to="uploads/")
+    image3 = models.ImageField(storage=PublicMediaStorage(), upload_to="uploads/")
 
     def __str__(self):
         return self.sector
