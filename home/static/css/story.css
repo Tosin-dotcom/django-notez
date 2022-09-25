@@ -10,9 +10,9 @@ body {
     box-sizing: border-box;
 }
 
+
 #welcome {
     height: 500px;
-    background-image: url(/media/css/back6.jpg);
     background-position: center top;
     background-size: cover;
     border: 0px;

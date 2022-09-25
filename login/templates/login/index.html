@@ -7,7 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		{% block title %}{% endblock %}
 	</head>
-	<body>
+	{% load static %}
+	<body style="background-image: url({% static 'login/form-image.jpg' %});">
 		
 		{% block content %}{% endblock %}
 
