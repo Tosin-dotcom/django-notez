@@ -24,6 +24,7 @@ regex==2021.8.28
 requests==2.26.0
 scipy==1.7.1
 six==1.16.0
+storages
 sounddevice==0.4.2
 SoundFile==0.10.3.post1
 sqlparse==0.4.2
