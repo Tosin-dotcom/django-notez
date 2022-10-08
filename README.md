@@ -3,10 +3,10 @@
 A  web journal
 Here is the [Live site](http://notez-1.herokuapp.com/)
 
-# description
+# Description
 This is a secured web based journal and diary suitable for storing text of any lenghth and accesible at any time.  
 
-# technogolies
+# Technologies used
 * Django
 * HTML
 * CSS 
@@ -15,11 +15,21 @@ This is a secured web based journal and diary suitable for storing text of any l
 * Amazon S3
 
 # How to install 
-install all the requirement using the command 
-`pip install -r requirements.txt`
+Clone to local computer
+```
+git clone https://github.com/Tosin-dotcom/django-notez
+```
 
-change use_s3 to False on line 141 in the notez/settings.py file
+Install all the requirement using the command 
+```
+pip install -r requirements.txt
+```
 
-run using the following command
-`python manage.py runserver`
+Change use_s3 to False on line 141 in the notez/settings.py file
+from `use_s3 = True` to `use_s3 to False`
 
+
+Run using the following command
+```
+python manage.py runserver
+```
