@@ -8,12 +8,15 @@ from notez.storage_backends import PublicMediaStorage
 
 class Category(models.Model):
     sector = models.CharField(max_length=100)
-    image1 = models.ImageField(upload_to="uploads/")
-    image2 = models.ImageField(upload_to="uploads/")
-    image3 = models.ImageField(upload_to="uploads/")
-    # image1 = models.ImageField(storage=PublicMediaStorage(), upload_to="uploads/")
-    # image2 = models.ImageField(storage=PublicMediaStorage(), upload_to="uploads/")
-    # image3 = models.ImageField(storage=PublicMediaStorage(), upload_to="uploads/")
+    #image1 = models.ImageField(upload_to="uploads/")
+    #image2 = models.ImageField(upload_to="uploads/")
+    #image3 = models.ImageField(upload_to="uploads/")
+    image1 = models.ImageField(
+        storage=PublicMediaStorage(), upload_to="uploads/")
+    image2 = models.ImageField(
+        storage=PublicMediaStorage(), upload_to="uploads/")
+    image3 = models.ImageField(
+        storage=PublicMediaStorage(), upload_to="uploads/")
 
     def __str__(self):
         return self.sector
