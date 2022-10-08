@@ -26,6 +26,7 @@ pip install -r requirements.txt
 ```
 
 Change use_s3 to False on line 141 in the notez/settings.py file
+
 from `use_s3 = True` to `use_s3 to False`
 
 
