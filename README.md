@@ -7,7 +7,7 @@ This is a secured web based journal and diary suitable for storing text of any l
 
 Use this details to check it out
 
-Username: Test123
+Username: Testing123
 
 Password: Test@123
 
