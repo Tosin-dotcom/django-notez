@@ -1,0 +1,165 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+
+#welcome {
+    height: 500px;
+    background-position: center top;
+    background-size: cover;
+    border: 0px;
+    margin: 0px
+}
+
+.nav-bar {
+    overflow: hidden;
+    top: 0;
+    width: 100%
+}
+
+@media only screen and (max-width: 768px) {
+    .home-page {
+        margin: 0px !important;
+        padding: 0px !important;
+        font-size: 20px !important;
+    }
+
+    .nav-bar a {
+        padding: 4px 8px !important;
+    }
+}
+
+
+
+.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.icon {
+    background-color: #ddd;
+    color: black;
+}
+
+.home-page {
+    color: black !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1000;
+    margin-left: 50px;
+}
+
+.home-page:hover {
+    background: none !important;
+}
+
+.nav-bar a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+
+.nav-bar a:hover {
+    background-color: #148670bb;
+
+}
+
+
+.nav-bar a:active {
+    color: #00bc95;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 68px;
+    position: relative;
+    top: 90px;
+}
+
+.subtitle {
+    font-size: 20px;
+    position: relative;
+    top: 80px;
+    text-align: center;
+    font-weight: lighter;
+
+}
+
+.btn {
+    text-align: center;
+    padding: 20px 40px 20px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    background-color: #00bc95;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.btn:hover {
+    background-color: inherit;
+    border: 2px solid black;
+}
+
+#services {
+    background-color: #e4e4e4;
+    border: 1px solid #e4e4e4;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+#services div {
+    margin: 20px;
+    border: 1px;
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+}
+
+#services img {
+    width: 50px;
+    height: 50px;
+}
+
+#services h5 {
+    font-weight: bolder;
+}
+
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #f1f1ef;
+    text-align: center;
+}
+
+#contact div {
+    padding: 5px
+}
