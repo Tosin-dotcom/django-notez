@@ -1,14 +1,22 @@
 # django-notez
 
-A  web journal
-Here is the [Live site](http://notez-1.herokuapp.com/)
+A  web based journal. Here demo [here](http://notez-1.herokuapp.com/)
 
 # Description
 This is a secured web based journal and diary suitable for storing text of any lenghth and accesible at any time.  
 
-Use this detail to check it out
+Use this details to check it out
+
 Username: Test123
+
 Password: Test@123
+
+# Screenshot
+![image-1](images/file.png)
+
+
+![image-2](images/file2.png)
+
 
 # Technologies used
 * Django
@@ -21,7 +29,7 @@ Password: Test@123
 # How to install 
 Clone to local computer
 ```
-git clone https://github.com/Tosin-dotcom/django-notez
+git clone https://github.com/Tosin-dotcom/django-notez.git
 ```
 
 Install all the requirement using the command 
