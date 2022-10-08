@@ -6,6 +6,10 @@ Here is the [Live site](http://notez-1.herokuapp.com/)
 # Description
 This is a secured web based journal and diary suitable for storing text of any lenghth and accesible at any time.  
 
+Use this detail to check it out
+Username: Test123
+Password: Test@123
+
 # Technologies used
 * Django
 * HTML
